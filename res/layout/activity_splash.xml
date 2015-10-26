@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/view1_splash"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="轻语"
+        android:textColor="#8EE5EE"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/tv1_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1_splash"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="感受到的"
+        android:textColor="#B0E0E6"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv2_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1_splash"
+        android:layout_marginLeft="20dp"
+        android:text="才是世界"
+        android:textColor="#B0E0E6"
+        android:textSize="30sp" />
+
+</RelativeLayout>

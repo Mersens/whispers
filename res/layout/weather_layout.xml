@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weather_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_bg_min" >
+
+    <RelativeLayout
+        android:id="@+id/weather_relayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/temp_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textColor="#ffffff"
+            android:textSize="70dp" />
+
+        <TextView
+            android:id="@+id/temp_pic_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/temp_weather"
+            android:text="℃"
+            android:textColor="#ffffff"
+            android:textSize="90dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weather_relayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/weather_relayout"
+        android:layout_below="@id/weather_relayout"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/wd_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="东风"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ws_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wd_weather"
+            android:text="2级"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weather_relayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_relayout2"
+        android:layout_marginLeft="30dp"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/cityinfo_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/city_weather"
+            android:text="这里是"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/city_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="郑州"
+            android:background="#00000000"
+            android:layout_toRightOf="@id/cityinfo_weather"
+            android:textColor="#FF00FF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/time_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_weather"
+            android:layout_marginLeft="40dp"
+            android:text="08:55更新"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

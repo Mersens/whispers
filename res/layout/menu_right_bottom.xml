@@ -1,0 +1,102 @@
+<com.zzuli.whispers.arcmenu.ArcMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:dyk="http://schemas.android.com/apk/res/com.zzuli.whispers.main"
+    android:id="@+id/id_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    dyk:position="right_bottom"
+    dyk:radius="170dp" >
+    <RelativeLayout
+        android:id="@+id/mainBtn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/composer_button" >
+        <ImageView
+            android:id="@+id/mainBtn_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:src="@drawable/composer_icn_plus" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/set_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="Set" >
+        <ImageView
+            android:id="@+id/set_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:src="@drawable/tab_settings_normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/frd_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="Frd" >
+
+        <ImageView
+            android:id="@+id/frd_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:src="@drawable/tab_frd_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朋友" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/find_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="Find" >
+
+        <ImageView
+            android:id="@+id/find_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:src="@drawable/tab_find_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whispers_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="Whispers" >
+
+        <ImageView
+            android:id="@+id/whispers_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:src="@drawable/tab_whispers_pressed" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="轻语" />
+    </LinearLayout>
+
+</com.zzuli.whispers.arcmenu.ArcMenu>

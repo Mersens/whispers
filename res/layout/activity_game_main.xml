@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <Button 
+      android:id="@+id/btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="拼图游戏"
+      />
+    <Button 
+      android:id="@+id/btn2"
+      android:layout_below="@id/btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="单选"
+      />
+    <Button android:id="@+id/btn3"
+        android:layout_below="@id/btn2"
+        android:layout_width="match_parent"
+        android:text="2048"
+        android:layout_height="wrap_content"/>
+ 
+
+</RelativeLayout>

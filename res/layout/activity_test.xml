@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zzuli.whispers.main.GamePintuLayout
+        android:id="@+id/id_gamepintu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#dd55ff"
+        android:padding="3dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_gamepintu"
+        android:gravity="center"
+        android:layout_margin="3dp" >
+
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="120"
+            android:textColor="#dd55ff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

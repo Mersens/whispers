@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/weather_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/first_tv_aboutus"
+            />
+
+        <TextView
+            android:layout_below="@id/first_tv_aboutus"
+            android:id="@+id/whispers_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="轻语"
+            android:textColor="#BBFFFF"
+            android:textSize="42sp" />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/whispers_aboutus"
+            android:id="@+id/view_aboutus"
+            />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/view_aboutus"
+            >
+             <TextView
+            android:id="@+id/whispers_more_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="让生活更"
+            android:layout_alignBottom="@+id/more_aboutus"
+            android:gravity="bottom"
+            android:textColor="#BDF4A1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/more_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/whispers_more_aboutus"
+            android:gravity="bottom"
+            android:text="精彩"
+            android:textColor="#CD0000"
+            android:textSize="35sp" />
+
+        </RelativeLayout>
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="V 2.5.8"
+            android:textColor="#9AFF9A"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         >
+
+        <TextView
+            android:layout_below="@+id/btn_aboutus"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="By:马新新，董永康，曹婷婷"
+            android:textColor="#9AFF9A"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_aboutus"
+            style="@style/Smile.Button.logout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="检查更新" />
+
+    </RelativeLayout>
+
+</LinearLayout>

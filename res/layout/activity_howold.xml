@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/top" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include1"
+        android:padding="5dp"
+         />
+    	<TextView
+		android:id="@+id/no_picture"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:textSize="16sp"
+	
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/no_chat"
+		android:text="@string/no_picture" />
+    	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_and_sex"
+        android:drawableLeft="@drawable/male"
+        android:background="@drawable/hint"
+        android:visibility="invisible"
+        android:text="boy"
+        android:textColor="#ffff00ff"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+</RelativeLayout>
